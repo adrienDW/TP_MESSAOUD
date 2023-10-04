@@ -1,0 +1,79 @@
+/*Reset CSS*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Fin reset CSS*/
+
+/*Header*/
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 160px;
+    width: 100vw;
+    background-color: white;
+    border-bottom: 1px solid rgba(132, 132, 132, 0.5);
+    position: fixed;
+
+}
+header img {
+    width: 60px;
+}
+header img:not(#icone-connexion, #logo) {
+    width: 27px;
+}
+header img:not(#logo):hover{
+    border-radius: 40%;
+    border: 1px solid black;
+}
+header input {
+    height: 30px;
+    margin-top: 20px;
+}
+header nav {
+    display: inline-block;
+    height: 60px;
+    line-height: 60px;
+    font-size: 13px;
+}
+header nav ul {
+    list-style-type: none;
+}
+header nav ul li {
+    display: inline-block;
+}
+header nav ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 5px 20px;
+    color: black;
+}
+header nav ul li a:hover {
+    color: rgba(132, 132, 132, 0.5);
+}
+.container-icone {
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.container-icone img {
+    width: 30px;
+}
+/*Fin Header*/
+main {
+    padding-top: 160px;
+}
+#container-photo-accueil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#container-photo-accueil button {
+    margin-top: 15px;
+}

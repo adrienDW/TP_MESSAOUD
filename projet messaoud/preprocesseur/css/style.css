@@ -1,0 +1,233 @@
+/*Reset CSS*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/*Fin reset CSS*/
+/*Body*/
+body {
+  overflow-x: hidden;
+  font-family: 'Muli'; }
+
+h2 {
+  font-size: 15px; }
+
+/*Fin Body*/
+/*Header*/
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 120px;
+  width: 100vw;
+  background-color: white;
+  border-bottom: 1px solid rgba(132, 132, 132, 0.5);
+  position: fixed;
+  box-shadow: 5px 0px 5px grey;
+  z-index: 1; }
+
+.hidden {
+  display: block;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute; }
+
+header img {
+  width: 80px;
+  margin-top: 5px;
+  position: relative;
+  left: 43vw; }
+
+header input {
+  height: 30px;
+  margin-top: 20px; }
+
+header nav {
+  display: inline-block;
+  height: 60px;
+  line-height: 60px;
+  font-size: 13px; }
+
+header nav ul li a {
+  font-size: 18px !important; }
+
+.container-fluid {
+  background-color: white !important; }
+
+.container-icone {
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap; }
+
+.smallHeaderMobile {
+  height: 80px; }
+  .smallHeaderMobile img {
+    width: 60px;
+    left: 44vw; }
+
+.smallHeader {
+  height: 80px; }
+  .smallHeader img {
+    width: 60px;
+    left: 46.5vw; }
+
+/*Fin Header*/
+/*Main*/
+main {
+  padding-top: 120px; }
+
+#container-photo-accueil img {
+  width: 100vw; }
+
+#container-photo-accueil, #container-photo-produit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  margin-bottom: 20px; }
+  #container-photo-accueil a:hover, #container-photo-produit a:hover {
+    color: white; }
+
+#container-photo-accueil button, #container-photo-produit button {
+  margin-top: 15px;
+  padding: 5px 0; }
+  #container-photo-accueil button a, #container-photo-produit button a {
+    text-decoration: none;
+    color: black;
+    padding: 9px; }
+
+.carousel-indicators button {
+  padding: 0 !important; }
+
+.separateur {
+  height: 200px; }
+
+.top {
+  border-top: 1px solid rgba(132, 132, 132, 0.5); }
+
+#carouselMontreGousset {
+  margin: 0px 10px; }
+
+#goTop a img {
+  width: 30px;
+  position: fixed;
+  right: 11px;
+  bottom: 50px;
+  border-radius: 35%; }
+
+/*Fin Main*/
+/*Classe bouton retour en haut de page*/
+.disappear {
+  display: none;
+  opacity: 0;
+  transition: opacity 1s ease 0s; }
+
+.appear {
+  display: block;
+  opacity: 1; }
+
+/*Fin classe bouton retour en haut de page*/
+/*Footer*/
+footer {
+  height: 120px;
+  background-color: grey;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center; }
+
+.container-newsletter {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .container-newsletter p {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: center; }
+  .container-newsletter input {
+    height: 25px;
+    position: relative;
+    bottom: 5px;
+    margin-right: 5px; }
+
+footer p a {
+  text-decoration: none;
+  color: var(--bs-body-color); }
+
+/*Fin Footer*/
+@media screen and (min-width: 597px) {
+  header nav {
+    font-size: 16px; }
+
+  #container-photo-accueil {
+    height: 59vh; }
+    #container-photo-accueil img {
+      width: 100vw; } }
+@media screen and (min-width: 764px) {
+  header img {
+    left: 43vw; }
+
+  #container-photo-accueil {
+    height: auto; }
+    #container-photo-accueil img {
+      width: 100vw; }
+
+  .carousel-item img {
+    width: 75vw !important; } }
+@media screen and (min-width: 1024px) {
+  header {
+    height: 165px; }
+
+  header img {
+    width: 130px; }
+
+  header nav {
+    font-size: 18px; }
+
+  header img:not(#logo):hover {
+    border-radius: 40%;
+    border: 1px solid black;
+    scale: 1.4; }
+
+  header nav ul li a:hover {
+    color: rgba(132, 132, 132, 0.5); }
+
+  #container-photo-accueil img {
+    height: 79vh;
+    width: auto; }
+  #container-photo-accueil a:hover {
+    color: black; }
+
+  #container-photo-accueil button {
+    position: relative;
+    bottom: 75px;
+    left: 400px; }
+
+  main {
+    padding-top: 165px; }
+
+  .carousel-item img {
+    width: 65vw !important; }
+
+  #goTop a img:hover {
+    display: block;
+    border: 1px solid black;
+    cursor: pointer;
+    scale: 1.4; } }
+@media screen and (min-width: 1300px) {
+  .smallHeader img {
+    left: 46vw; }
+
+  .carousel-item img {
+    width: 55vw !important; } }
+
+/*# sourceMappingURL=style.css.map */
